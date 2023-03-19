@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e3f2fd;
+}
+.wrapper {
+  width: 65vmin;
+  height: 70vmin;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #293447;
+}
+.game-details {
+  color: #b8c6dc;
+  font-weight: 500;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  background: #212837;
+}
+.play-board .food {
+  background: #ff003d;
+}
+.play-board .head {
+  background: #60cbff;
+}
